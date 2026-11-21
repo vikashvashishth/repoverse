@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: '/api', timeout: 45000 });
+const API_URL= import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const api = axios.create({ baseURL: `${API_URL}/api`, timeout: 45000 });
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('repoverse-token');
   if (token) config.headers.Authorization = `Bearer ${token}`;
