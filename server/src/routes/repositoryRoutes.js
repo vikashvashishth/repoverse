@@ -1,0 +1,12 @@
+const router = require('express').Router();
+const rateLimit = require('express-rate-limit');
+const { protect } = require('../middleware/authMiddleware');
+const { upload } = require('../middleware/uploadMiddleware');
+const { importGithub, importZip, listConnections, configureWebhook, syncRepository } = require('../controllers/repositoryController');
+const importLimit = rateLimit({ windowMs: 60 * 60 * 1000, max: 12, standardHeaders: true, legacyHeaders: false, message: { message: 'Import limit reached. Please try again later.' } });
+router.post('/github', protect, importLimit, importGithub);
+router.post('/zip', protect, importLimit, upload.single('archive'), importZip);
+router.get('/connections', protect, listConnections);
+router.post('/webhook', protect, importLimit, configureWebhook);
+router.post('/sync', protect, importLimit, syncRepository);
+module.exports = router;
