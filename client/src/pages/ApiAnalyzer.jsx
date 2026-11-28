@@ -139,7 +139,7 @@ export default function ApiAnalyzer() {
   const writeMethod =
     selectedMethod && !["GET", "HEAD", "OPTIONS"].includes(selectedMethod);
   return (
-    <section className="section-pad">
+    <section className="section-pad py-4">
       <div className="container">
         <div className="page-heading">
           <div>

@@ -39,7 +39,7 @@ export default function Home() {
   const { user } = useAuth();
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section py-5">
         <div className="container">
           <div className="row align-items-center gy-5">
             <div className="col-lg-7">
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="features" className="section-pad bg-soft">
+      <section id="features" className="section-pad bg-soft py-5">
         <div className="container">
           <div className="section-intro">
             <p className="eyebrow">Built for practical investigations</p>
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="how-it-works" className="section-pad">
+      <section id="how-it-works" className="section-pad py-5">
         <div className="container">
           <div className="section-intro">
             <p className="eyebrow">A focused workflow</p>

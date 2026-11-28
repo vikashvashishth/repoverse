@@ -35,7 +35,7 @@ export default function RepositoryAnalysis() {
     );
   const { repository, stats } = analysis;
   return (
-    <section className="analysis-page">
+    <section className="analysis-page py-4">
       <div className="container-fluid px-lg-4">
         <div className="analysis-heading">
           <div>

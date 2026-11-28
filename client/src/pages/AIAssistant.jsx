@@ -59,7 +59,7 @@ export default function AIAssistant() {
   };
 
   return (
-    <section className="section-pad">
+    <section className="section-pad py-4">
       <div className="container">
         <div className="page-heading">
           <div>

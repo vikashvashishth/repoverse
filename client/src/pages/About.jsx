@@ -1,7 +1,7 @@
 import { CheckCircle2, Shield, Telescope } from "lucide-react";
 export default function About() {
   return (
-    <section className="section-pad">
+    <section className="section-pad py-4">
       <div className="container narrow">
         <p className="eyebrow">About RepoVerse 3D</p>
         <h1 className="page-title">

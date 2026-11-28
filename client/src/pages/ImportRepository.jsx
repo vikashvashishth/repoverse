@@ -52,7 +52,7 @@ export default function ImportRepository() {
     }
   };
   return (
-    <section className="section-pad">
+    <section className="section-pad py-3">
       <div className="container narrow-wide">
         <div className="page-heading">
           <div>
@@ -158,7 +158,7 @@ export default function ImportRepository() {
               cleans up temporary source files after the scan.
             </span>
           </div>
-          <div className="import-notice mt-3">
+          {/* <div className="import-notice mt-3">
             <Github size={18} />
             <span>
               Automatic updates require GitHub webhook setup and are not granted by importing.
@@ -166,7 +166,7 @@ export default function ImportRepository() {
               RepoVerse webhook URL shown after connecting, select application/json and
               the push event, and enter a secret of at least 16 characters.
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

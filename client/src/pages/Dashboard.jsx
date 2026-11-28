@@ -46,7 +46,7 @@ export default function Dashboard() {
   };
   const open = repos?.reduce((count, repo) => count + repo.openErrors, 0) || 0;
   return (
-    <section className="dashboard-page">
+    <section className="dashboard-page py-4">
       <div className="container">
         <div className="page-heading">
           <div>

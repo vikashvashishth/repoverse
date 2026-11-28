@@ -50,7 +50,7 @@ export default function Reports() {
     analysis.issues.filter((issue) => issue.severity === level).length,
   ]);
   return (
-    <section className="section-pad">
+    <section className="section-pad py-4">
       <div className="container narrow-wide">
         <div className="page-heading">
           <div>

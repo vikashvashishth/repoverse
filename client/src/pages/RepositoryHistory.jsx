@@ -135,7 +135,7 @@ export default function RepositoryHistory() {
     (repo) => repo.repoUrl === filters.repoUrl,
   );
   return (
-    <section className="section-pad history-page">
+    <section className="section-pad history-page py-4">
       <div className="container">
         <div className="page-heading">
           <div>

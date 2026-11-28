@@ -28,7 +28,7 @@ export default function ErrorAnalysis() {
       ["Critical", "High", "Medium", "Low"].indexOf(b.severity),
   );
   return (
-    <section className="section-pad">
+    <section className="section-pad py-4">
       <div className="container">
         <div className="page-heading">
           <div>
