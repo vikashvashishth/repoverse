@@ -68,6 +68,11 @@ npm run build --prefix client
 
 Publish `client/dist`. Configure SPA fallback so browser routes such as `/analysis/...` load `index.html`, and configure `/api/*` to be forwarded to the backend before the SPA fallback. The Vite proxy in `client/vite.config.js` is for local development only.
 
+For a Vercel frontend and Render backend, set these environment variables:
+
+- In Vercel: set `VITE_API_URL` to `https://repoverse-wig8.onrender.com`, or redeploy after keeping `client/.env.production` in the repository.
+- In Render: set `CLIENT_URL` to `https://repoverse-rosy.vercel.app` so the backend accepts requests from the deployed frontend.
+
 ### GitHub webhook setup
 
 Automatic synchronization is optional and must be configured for each repository:
