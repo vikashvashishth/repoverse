@@ -65,18 +65,18 @@ export default function AIAssistant() {
           <div>
             <p className="eyebrow">AI tools</p>
             <h1>{analysis.repository.name} AI assistant</h1>
-            <p>
+            {/* <p>
               Answers are generated with the Gemini API using your server configuration.
-            </p>
+            </p> */}
           </div>
           <Link className="btn btn-outline-primary" to={`/analysis/${analysisId}`}>
             Back to analysis
           </Link>
         </div>
-        <div className="alert alert-info">
+        {/* <div className="alert alert-info">
           Relevant repository excerpts are sent to Google when you use these AI tools.
           Excerpts are cached locally for up to one hour.
-        </div>
+        </div> */}
         {message && <div className="alert alert-danger">{message}</div>}
 
         <article className="panel-card mb-4">
